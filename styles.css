@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px 60px 20px;
+}
+
+a {
+  color: grey;
+}
+a:hover {
+  color: black;
+}
+
+h1 {
+  font-size: 52px;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  line-height: 32px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+#tribute-info {
+  border: 1px dotted black;
+  padding: 50px;
+}
+#tribute-info h1 {
+  margin: 0;
+}
+
+.flex-container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure {
+  margin: 0;
+}
+
+#img-div {
+  padding-top: 50px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#img-caption {
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-caption {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.more-info {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .flex-container-1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-container-2 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
