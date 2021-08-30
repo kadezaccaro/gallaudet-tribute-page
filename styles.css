@@ -25,7 +25,7 @@ a:hover {
 h1 {
   font-size: 52px;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -48,11 +48,15 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 .flex-container-2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 figure {
@@ -86,6 +90,13 @@ figure {
   text-align: center;
 }
 
+.references {
+  font-size: 16px;
+  line-height: 26px;
+  color: grey;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1000px) {
   .flex-container-1 {
     flex-direction: column;
@@ -96,5 +107,11 @@ figure {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 32px;
   }
 }
